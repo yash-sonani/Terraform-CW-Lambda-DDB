@@ -62,7 +62,7 @@ resource "aws_iam_policy" "iam_policy" {
       {
         Effect = "Allow"
         Action = [
-          "dynamodb:GetItem"
+          "dynamodb:*"
         ]
         Resource = [
           aws_dynamodb_table.table.arn
